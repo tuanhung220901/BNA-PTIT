@@ -1,3 +1,7 @@
+import Shop_deatail from "./detail_comp.js"
+import ComicContainer from "./ComicContainer.js";
+import ComicList from "./comicList.js";
+import dataTest from "./data-test.js"
 /*  ---------------------------------------------------
     Template Name: Ogani
     Description:  Ogani eCommerce  HTML Template
@@ -6,6 +10,13 @@
     Version: 1.0
     Created: Colorlib
 ---------------------------------------------------------  */
+// lấy data
+
+let json = JSON.stringify(dataTest);
+console.log(json);
+let $comicList = document.getElementById('my-list');
+$comicList.setAttribute('comics',json);
+//
 
 'use strict';
 
